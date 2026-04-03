@@ -178,7 +178,6 @@ mvn spring-boot:run
 | `testLoadUserByUsername_CheckAuthorities()` | Kiểm tra quyền (authorities) của user |
 | `testLoadUserByUsername_NoRole()` | Kiểm tra xử lý khi user không có role |
 
-
 ---
 
 ### 4. **UsersEntityTest.java** (11 test cases)
@@ -252,10 +251,8 @@ mvn spring-boot:run
 | `testRedisTemplateConfiguration()` | Kiểm tra RedisTemplate được cấu hình |
 | `testSecurityConstants()` | Kiểm tra giá trị SecurityConstants |
 
-
-
 ---
-### 9. Chạy Test  
+### 9. Run JUnit Test 
 **Chạy tất cả tests:**
 ```
 mvn test
@@ -264,7 +261,7 @@ mvn test
 ```
 mvn test -Dtest=GameControllerTest
 ```
-**EVD**
+**Evidence**
 ![](./inmobi_test/image/JUnit_Test.PNG)
 
 
