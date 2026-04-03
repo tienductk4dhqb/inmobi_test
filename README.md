@@ -11,6 +11,7 @@
 ```
 **inmobi_test**
 ├───src
+**Class Main**
 │   ├───main
 │   │   ├───java
 │   │   │   └───cooccon
@@ -45,6 +46,36 @@
 │   │       │   application.properties # Cấu hình DB, Port, Redis...
 │   │       │   data.sql # Data Sample
 
+```
+```
+**Class Test**
+│   └───test
+│       ├───java
+│       │   └───cooccon
+│       │       └───spring
+│       │           │   DelegatingServletInputStream.java
+│       │           │   InmobiTestApplicationTests.java
+│       │           │
+│       │           ├───controller
+│       │           │       GameControllerTest.java
+│       │           │
+│       │           ├───entity
+│       │           │       UsersEntityTest.java
+│       │           │
+│       │           ├───repository
+│       │           │       UserRepositoryTest.java
+│       │           │
+│       │           ├───security
+│       │           │       JWTAuthenticationFilterTest.java
+│       │           │       JWTAuthenticationVerficationFilterTest.java
+│       │           │       SecurityConfigurationTest.java
+│       │           │
+│       │           └───service
+│       │                   GameServiceTest.java
+│       │                   UserServiceTest.java
+│       │
+│       └───resources
+│               application-test.properties
 ```
 ## III. Công nghệ sử dụng
 | Công Nghệ | Phiên Bản | Mục Đích |
@@ -120,8 +151,6 @@ mvn spring-boot:run
 | `testMeEndpoint()` | Kiểm tra endpoint `/me` lấy thông tin user hiện tại |
 | `testGuessEndpoint_UserNotFound()` | Kiểm tra xử lý lỗi khi user không tồn tại |
 
-**Tools:** MockMvc, Mockito
-
 ---
 
 ### 2. **GameServiceTest.java** (6 test cases)
@@ -136,8 +165,6 @@ mvn spring-boot:run
 | `testLeaderboard_FromDatabase()` | Kiểm tra lấy leaderboard từ DB khi cache trống |
 | `testGuessNumber_ThreadSafety()` | Kiểm tra thread safety khi đoán số đồng thời |
 
-**Tools:** Mockito, RedisTemplate mock
-
 ---
 
 ### 3. **UserServiceTest.java** (5 test cases)
@@ -151,7 +178,6 @@ mvn spring-boot:run
 | `testLoadUserByUsername_CheckAuthorities()` | Kiểm tra quyền (authorities) của user |
 | `testLoadUserByUsername_NoRole()` | Kiểm tra xử lý khi user không có role |
 
-**Tools:** Mockito, Spring Security
 
 ---
 
@@ -166,8 +192,6 @@ mvn spring-boot:run
 | `testGetAuthorities_ValidRole()` | Kiểm tra lấy authorities với role hợp lệ |
 | `testGetAuthorities_NullRole()` | Kiểm tra authorities khi role null |
 | `testDefaultScoreValue()`, `testDefaultTurnsValue()` | Kiểm tra giá trị mặc định |
-
-**Tools:** JUnit 5 Assertions
 
 ---
 
@@ -185,8 +209,6 @@ mvn spring-boot:run
 | `testUpdate()` | Kiểm tra cập nhật user |
 | `testDelete()` | Kiểm tra xóa user |
 
-**Tools:** @DataJpaTest, H2 Database
-
 ---
 
 ### 6. **JWTAuthenticationFilterTest.java** (4 test cases)
@@ -198,8 +220,6 @@ mvn spring-boot:run
 | `testAttemptAuthentication_Failure()` | Kiểm tra đăng nhập với password sai |
 | `testAttemptAuthentication_InvalidJson()` | Kiểm tra xử lý JSON không hợp lệ |
 | `testConstructor_AuthenticationManagerSet()` | Kiểm tra AuthenticationManager được set |
-
-**Tools:** Mockito, DelegatingServletInputStream
 
 ---
 
@@ -215,8 +235,6 @@ mvn spring-boot:run
 | `testDoFilterInternal_InvalidToken()` | Kiểm tra token không hợp lệ |
 | `testDoFilterInternal_TamperedToken()` | Kiểm tra token bị giả mạo |
 | `testConstructor()` | Kiểm tra constructor filter |
-
-**Tools:** Mockito, JWT (Auth0)
 
 ---
 
@@ -234,9 +252,19 @@ mvn spring-boot:run
 | `testRedisTemplateConfiguration()` | Kiểm tra RedisTemplate được cấu hình |
 | `testSecurityConstants()` | Kiểm tra giá trị SecurityConstants |
 
-**Tools:** @SpringBootTest, BCryptPasswordEncoder
+
 
 ---
 ### 9. Chạy Test  
+**Chạy tất cả tests:**
+```
+mvn test
+```
+**Chạy một test class cụ thể:**
+```
+mvn test -Dtest=GameControllerTest
+```
+**EVD**
+![](./inmobi_test/image/JUnit_Test.PNG)
 
 
