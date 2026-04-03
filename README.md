@@ -127,7 +127,7 @@ docker run -d --name redis-server -p 6379:6379 redis:7
 mvn clean install  
 mvn spring-boot:run
 ### 3. Cách lấy token/đăng nhập
-![](./inmobi_test/image/login_gettoken.png)
+![](./inmobi_test/image/login_gettoken.PNG)
 ### 4. API Endpoints 
 **URL Cơ Sở: http://localhost:8080**  
 **Tất cả các endpoint (ngoại trừ /login) đều yêu cầu JWT token trong header Authorization:**  
