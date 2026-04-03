@@ -88,6 +88,9 @@
 | **Redis** | 7.x | Lớp caching |
 | **Docker** | Mới nhất | Containerization |
 | **Maven** | 3.8+ | Công cụ build |
+| **JUnit 5** | Mới nhất | JUnit Test |
+| **Mockito** | 5.2.0 | JUnit Test |
+| **Spring Test** | Mới nhất | JUnit Test |
 
 ## IV. Bảo mật
 1. Xử lý sao để đảm bảo tính đúng đắn của API khi user gọi /guess nhiều lần cùng lúc
