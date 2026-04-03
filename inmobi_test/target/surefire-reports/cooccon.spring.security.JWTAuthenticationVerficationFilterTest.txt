@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: cooccon.spring.security.JWTAuthenticationVerficationFilterTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.290 s <<< FAILURE! -- in cooccon.spring.security.JWTAuthenticationVerficationFilterTest
+cooccon.spring.security.JWTAuthenticationVerficationFilterTest.testDoFilterInternal_OtherCookie -- Time elapsed: 0.017 s <<< ERROR!
+com.auth0.jwt.exceptions.JWTDecodeException: The token was expected to have 3 parts, but got 1.
+	at com.auth0.jwt.TokenUtils.splitToken(TokenUtils.java:21)
+	at com.auth0.jwt.JWTDecoder.<init>(JWTDecoder.java:36)
+	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:282)
+	at cooccon.spring.security.JWTAuthenticationVerficationFilter.doFilterInternal(JWTAuthenticationVerficationFilter.java:57)
+	at cooccon.spring.security.JWTAuthenticationVerficationFilterTest.testDoFilterInternal_OtherCookie(JWTAuthenticationVerficationFilterTest.java:118)
+

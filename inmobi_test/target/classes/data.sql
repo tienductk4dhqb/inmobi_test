@@ -1,0 +1,13 @@
+INSERT INTO users (username, password, email, score, turns, role) VALUES ('user1', '$2a$10$8lIsm9Id.UOYxZu4UuCaYeqLD2WWdjObljHT6l0u.Bf1uYQdsjI5K', 'email1@gmail.com', 1, 5, 'USER');
+INSERT INTO users (username, password, email, score, turns, role) VALUES ('user2', '$2a$10$8lIsm9Id.UOYxZu4UuCaYeqLD2WWdjObljHT6l0u.Bf1uYQdsjI5K', 'email2@gmail.com', 2, 5, 'USER');
+INSERT INTO users (username, password, email, score, turns, role) VALUES ('user3', '$2a$10$8lIsm9Id.UOYxZu4UuCaYeqLD2WWdjObljHT6l0u.Bf1uYQdsjI5K', 'email3@gmail.com', 3, 0, 'USER');
+INSERT INTO users (username, password, email, score, turns, role) VALUES ('user4', '$2a$10$8lIsm9Id.UOYxZu4UuCaYeqLD2WWdjObljHT6l0u.Bf1uYQdsjI5K', 'email4@gmail.com', 4, 0, 'USER');
+INSERT INTO users (username, password, email, score, turns, role) VALUES ('user5', '$2a$10$8lIsm9Id.UOYxZu4UuCaYeqLD2WWdjObljHT6l0u.Bf1uYQdsjI5K', 'email5@gmail.com', 5, 0, 'USER');
+INSERT INTO users (username, password, email, score, turns, role) VALUES ('user6', '$2a$10$8lIsm9Id.UOYxZu4UuCaYeqLD2WWdjObljHT6l0u.Bf1uYQdsjI5K', 'email6@gmail.com', 6, 0, 'USER');
+INSERT INTO users (username, password, email, score, turns, role) VALUES ('user7', '$2a$10$8lIsm9Id.UOYxZu4UuCaYeqLD2WWdjObljHT6l0u.Bf1uYQdsjI5K', 'email7@gmail.com', 7, 0, 'USER');
+INSERT INTO users (username, password, email, score, turns, role) VALUES ('user8', '$2a$10$8lIsm9Id.UOYxZu4UuCaYeqLD2WWdjObljHT6l0u.Bf1uYQdsjI5K', 'email8@gmail.com', 8, 0, 'USER');
+INSERT INTO users (username, password, email, score, turns, role) VALUES ('user9', '$2a$10$8lIsm9Id.UOYxZu4UuCaYeqLD2WWdjObljHT6l0u.Bf1uYQdsjI5K', 'email9@gmail.com', 9, 0, 'USER');
+INSERT INTO users (username, password, email, score, turns, role) VALUES ('user10', '$2a$10$8lIsm9Id.UOYxZu4UuCaYeqLD2WWdjObljHT6l0u.Bf1uYQdsjI5K', 'email10@gmail.com', 10, 0, 'USER');
+INSERT INTO users (username, password, email, score, turns, role) VALUES ('user11', '$2a$10$8lIsm9Id.UOYxZu4UuCaYeqLD2WWdjObljHT6l0u.Bf1uYQdsjI5K', 'email11@gmail.com', 11, 0, 'USER');
+INSERT INTO users (username, password, email, score, turns, role) VALUES ('user12', '$2a$10$8lIsm9Id.UOYxZu4UuCaYeqLD2WWdjObljHT6l0u.Bf1uYQdsjI5K', 'email12@gmail.com', 12, 0, 'USER');
+INSERT INTO users (username, password, email, score, turns, role) VALUES ('user13', '$2a$10$8lIsm9Id.UOYxZu4UuCaYeqLD2WWdjObljHT6l0u.Bf1uYQdsjI5K', 'email13@gmail.com', 13, 0, 'USER');

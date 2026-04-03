@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: cooccon.spring.security.SecurityConfigurationTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.180 s -- in cooccon.spring.security.SecurityConfigurationTest

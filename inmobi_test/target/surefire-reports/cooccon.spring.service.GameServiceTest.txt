@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: cooccon.spring.service.GameServiceTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.786 s <<< FAILURE! -- in cooccon.spring.service.GameServiceTest
+cooccon.spring.service.GameServiceTest.testGuessNumber_ThreadSafety -- Time elapsed: 0.725 s <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+
+Unnecessary stubbings detected.
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at cooccon.spring.service.GameServiceTest.setUp(GameServiceTest.java:62)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.lambda$afterEach$2(MockitoExtension.java:200)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+cooccon.spring.service.GameServiceTest.testGuessNumber_NoTurnsLeft -- Time elapsed: 0.011 s <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+
+Unnecessary stubbings detected.
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at cooccon.spring.service.GameServiceTest.setUp(GameServiceTest.java:62)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.lambda$afterEach$2(MockitoExtension.java:200)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+cooccon.spring.service.GameServiceTest.testBuyTurns -- Time elapsed: 0.008 s <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+
+Unnecessary stubbings detected.
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at cooccon.spring.service.GameServiceTest.setUp(GameServiceTest.java:62)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.lambda$afterEach$2(MockitoExtension.java:200)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+cooccon.spring.service.GameServiceTest.testGuessNumber_CorrectGuess -- Time elapsed: 0.008 s <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+
+Unnecessary stubbings detected.
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at cooccon.spring.service.GameServiceTest.setUp(GameServiceTest.java:62)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.lambda$afterEach$2(MockitoExtension.java:200)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
